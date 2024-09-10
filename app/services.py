@@ -17,8 +17,8 @@ class Auth:
             return e, 400
         
     def login(email, pswd):
-        user = UserModel.query.filter(UserModel.email==email).one()
-        if user and user.check_password(pswd):
+        user = UserModel.query.filter_by(email=email).first()
+        if (user is not None) and user.check_password(pswd):
             return 'Success', 200
         
         return 'Error', 401
