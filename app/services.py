@@ -1,5 +1,5 @@
-from model import UserModel
-from extensions import db
+from app.model import UserModel
+from app.extensions import db
 from sqlalchemy.exc import IntegrityError
 
 class Auth:

@@ -1,7 +1,11 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
-from services import Auth
+from app.services import Auth
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = "YouDontGetTheKey"
+app.config['SQLALCHEMY_DATABASE_URL'] = 'sqlite:////app.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
 
 @app.route('/')
 def login():
