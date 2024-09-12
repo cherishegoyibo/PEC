@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
-from app.services import Auth
+# from app.services import Auth
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "YouDontGetTheKey"
@@ -8,6 +8,11 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
 @app.route('/')
+def home():
+    return "Welcome to my HomePage!"
+
+
+@app.route('/login')
 def login():
     if request.method == 'POST':
         email = request.form.get('email')
@@ -44,7 +49,7 @@ def customer_register():
             return render_template('login.html')
         
         elif status == 400:
-            flash(message=e)
+            flash(message='error')
         
         
     return render_template('registration.html')
