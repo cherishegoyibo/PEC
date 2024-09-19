@@ -1,5 +1,5 @@
-<a href="https://https://pec-assist-deploy.onrender.com//">
-    <img src="/home/cher/PEC-Project/assets/img/PEC-logo.png" alt="PEC logo" title="PEC" align="right" height="60" />
+<a href="https://pec-assist-deploy.onrender.com//">
+    <img src="assets/img/PEC-logo.png" alt="PEC logo" title="PEC" style="float: right; height: 60px;" />
 </a>
 
 # Poultry Ecosystem Care
@@ -20,8 +20,8 @@
 - [Contributing](#contributing)
 - [Inspiration](#inspiration)
 - [Technology](#technology)
-- [Related Pages](#related pages)
-- [Problem Statement](#problem statement)
+- [Related Projects](#related_projects)
+- [Problem Statement](#problem_statement)
 - [License](#license)
 - [Links](#links)
 
